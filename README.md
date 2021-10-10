@@ -1,1 +1,1 @@
-# jsp_practice
+# jsp-practice
