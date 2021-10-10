@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="Person" name="frm" method="post" onsubmit="return chk()">
+<table border="1" bgcolor="pink" align="center">
+	<caption><h1>개인 정보</h1></caption>
+	<tr><td>이름</td><td><input name="name"></td></tr>
+	<tr><td>암호</td><td><input type="password" name="pass"></td></tr>
+	<tr><td>암호확인</td><td><input type="password" name="pass2"></td></tr>
+	<tr><td>성별</td>
+	<td><label>남<input type="radio" name="gender" checked value="남자"></label>
+		<label>여<input type="radio" name="gender" value="여자"></label>
+	</td></tr>
+	<tr><td>메일수인</td>
+	<td><label>공지<input type="checkbox" name="inotice" value="공지"></label>
+	<label>광고<input type="checkbox" name="cnotice" value="광고"></label>
+	<label>배송<input type="checkbox" name="dnotice" value="배송"></label>
+	</td></tr>
+	<tr><td>직업</td>
+	<td><select name="job">
+	  <option value="회사원">회사원</option>
+	  <option value="수강생">수강생</option>
+	  <option value="기타">기타</option>
+	</select>
+	</td></tr>
+	<tr><td colspan="2"><input type="submit" value="확인">
+		<input type="reset" value="취소">
+	</td></tr>
+</table>
+</form>
+</body>
+</html>
