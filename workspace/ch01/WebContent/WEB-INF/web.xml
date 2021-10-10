@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ch01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 서블릿 설정 -->
+  <servlet>
+  	<servlet-name>a</servlet-name>
+  	<servlet-class>ch01.ServletTest3</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>b</servlet-name>
+  	<servlet-class>ch01.ServletTest4</servlet-class>
+  </servlet>
+  
+  <!-- 서블릿 매핑 -->
+  <servlet-mapping>
+  	<servlet-name>a</servlet-name>
+  	<url-pattern>/test3</url-pattern>
+  </servlet-mapping>
+  
+  <!--<servlet-mapping>
+  	<servlet-name>b</servlet-name>
+  	<url-pattern>/test4</url-pattern>
+  </servlet-mapping>
+  -->
+</web-app>
